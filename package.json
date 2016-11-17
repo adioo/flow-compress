@@ -1,0 +1,24 @@
+{
+  "name": "flow-compress",
+  "version": "0.1.0",
+  "description": "Compression handlers for flow.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adioo/flow-compress.git"
+  },
+  "keywords": [
+    "flow",
+    "gzip",
+    "compression"
+  ],
+  "author": "Adrian Ottiker <adrian@ottiker.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adioo/flow-compress/issues"
+  },
+  "homepage": "https://github.com/adioo/flow-compress#readme"
+}
