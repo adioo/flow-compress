@@ -2,9 +2,9 @@
 
 const zlib = require("zlib");
 
-exports.gzip = (scope, inst, args, data, next) => {
+exports.gzip = (scope, inst, args, data, stream, next) => {
 
-    if (!args.target) {
+    /*if (!args.target) {
         return next(new Error('Flow-compress: No target stream defined.'));
     }
 
@@ -13,6 +13,9 @@ exports.gzip = (scope, inst, args, data, next) => {
     }
 
     data[args.target || 'read'] = data[args.target].pipe(zlib.createGzip(args.options));
+    */
 
-    next(null, data);
+    stream = stream.pipe(zlib.createGzip(args.options));
+
+    next(null, data, stream);
 };
